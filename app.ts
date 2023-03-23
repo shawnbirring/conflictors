@@ -5,7 +5,6 @@ interface Human {
 
 class User {
   constructor(private readonly person: Human) {}
-
   public getFullName(): string {
     return `${this.person.name} Doe`;
   }
