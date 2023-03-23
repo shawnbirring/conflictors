@@ -1,10 +1,10 @@
-interface Person {
+interface Human {
   name: string;
   age: number;
 }
 
 class User {
-  constructor(private readonly person: Person) {}
+  constructor(private readonly person: Human) {}
 
   public getFullName(): string {
     return `${this.person.name} Doe`;
@@ -36,9 +36,9 @@ function isPrime(n: number): boolean {
 }
 
 const users: User[] = [
-  new User({ name: 'John', age: 30 }),
-  new User({ name: 'Jane', age: 25 }),
-  new User({ name: 'Bob', age: 40 })
+  new User({ name: "John", age: 30 }),
+  new User({ name: "Jane", age: 25 }),
+  new User({ name: "Bob", age: 40 }),
 ];
 
 for (const user of users) {
@@ -61,9 +61,9 @@ if (x > 15) {
   console.log(`x is less than or equal to 15`);
 }
 
-const readline = require('readline').createInterface({
+const readline = require("readline").createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
 });
 
 readline.question(`What is your name? `, (name: string) => {
