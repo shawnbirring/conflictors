@@ -1,10 +1,10 @@
-interface Individual {
+interface Fellow {
   name: string;
   age: number;
 }
 
 class User {
-  constructor(private readonly person: Individual) {}
+  constructor(private readonly person: Fellow) {}
 
   public getFullName(): string {
     return `${this.person.name} Doe`;
